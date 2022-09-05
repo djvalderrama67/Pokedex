@@ -3,42 +3,38 @@
   margin: 0;
   padding: 0;
 }
-
-
-p{
-  color:blue;
+body {
+  font-family: 'Arial', sans-serif;    
+  background: whitesmoke;
+  text-indent: 0x;
+  text-align: justify;
 }
-.clase{
-  color: red;
-}
-body{
-  background-color: sandybrown;
-}
-main {
-  background-color: orangered;
-}
-#identifica{
-  color: purple;
-  font-size: 30px;
+html{
+  scroll-behavior:smooth;
 }
 .main-nav{
   margin-top:10px;
   font-size: large;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: aqua;
-  padding-left: 300px;
+  background-color: rgb(57, 120, 82);
+  padding-left: 250px;
   list-style-type: style none;
+  width: 100%;
 }
 .main-nav_item{
   display: inline;
 }
 .main-nav_item a{
-  text-decoration:none;
-  padding-left: 100px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  color: rgb(245, 241, 241);
 }
 
 .main-nav_item a:hover{
-  color: blue;
+  background: #479368;
+  color: #fff;
+  text-decoration: none;
 }
 .main-nav_item a:active{
   color: brown;
@@ -50,22 +46,165 @@ main {
 .main-nav_item a #contact::after{
   content: "";
 }
-h2 + p{
-  color: red;
-  font-size: 50px;
-}
 
-div > p{
-  color: orange;
-  font-size: large;
-  
+aside {
+  min-width: 20%;
+  margin: 40px 20px 20px 0;
+  height: 100%;
+  background: #bfb05b;
+  padding: 30px;
+  border-radius: 6px;
+}
+aside .indice a {
+  display: block;
+  margin-bottom: 10px;
+  color: #bfb05b;
+}
+main .contenido p {
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #525151;
+}
+.links {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 img {
-  border: 10px solid orange;
+  border: 7px solid orange;
   border-radius: 4px;
   padding: 5px;
-  width: 89%;
+  width: 78%;
   display: block;
-  margin:auto;
-  height: 500px;
+  margin-left: 10em;
+  margin-right: 10em;
+  height: 600px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+.navbar {
+  background: #bfb05b;
+}
+
+.navbar a {
+  color: #fff;
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  color: rgb(245, 241, 241);
+  transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+  background: #1D2F3D;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* * ============================== */
+/* * ============ MAIN ============ */
+/* * ============================== */
+
+main {
+  min-height: 100vh;
+}
+
+main .contenido p {
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #525151;
+}
+
+main .contenido .titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  padding-top: 40px;
+}
+
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+
+aside {
+  min-width: 20%;
+  margin: 40px 20px 20px 0;
+  height: 100%;
+  background: #479368;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+aside .titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+}
+
+aside .indice a {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+aside .indice p {
+  display: block;
+  margin-bottom: 10px;
+  color: #f0e80c;
+}
+
+aside .indice li {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+/* * ============================== */
+/* * ========== FOOTER ============ */
+/* * ============================== */
+
+
+
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 900px){
+  .navbar .links {
+      flex-wrap: wrap;
+      margin: 0;
+      width: 100%;
+  }
+
+  .navbar a {
+      width: auto;
+      flex: 1;
+  }
+
+
+  main .links {
+      flex-direction: column;
+  }
 }
