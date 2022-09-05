@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
   }
-  body {
+body {
     font-family: 'Arial', sans-serif;    
     background: whitesmoke;
     text-indent: 0x;
     text-align: justify;
-  }
-  html{
+}
+html{
     scroll-behavior:smooth;
   }
 table{
@@ -20,228 +20,220 @@ table{
     margin-left:0%;
     padding: 0;
     border-spacing: 0;
-  }
-  tr{
-    border-collapse: collapse;
-    padding: 0;
-    border-spacing: 0;
-  }
-  .habilidades{
-    border: 2px #dddf43;
-  }
-  .main-nav{
-    margin-top:10px;
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(57, 120, 82);
-    padding-left: 250px;
-    list-style-type: style none;
-    width: 100%;
-  }
-  .main-nav_item{
-    display: inline;
-  }
-  .main-nav_item a{
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    color: rgb(245, 241, 241);
-  }
-  
-  .main-nav_item a:hover{
-    background: #479368;
-    color: #fff;
-    text-decoration: none;
-  }
-  .main-nav_item a:active{
-    color: brown;
-  }
-  .main-nav_item a::after{
-    content: "  ";
-  }
-  
-  .main-nav_item a #contact::after{
-    content: "";
-  }
-  
-  aside {
-    min-width: 20%;
-    margin: 40px 20px 20px 0;
-    height: 100%;
-    background: #bfb05b;
-    padding: 30px;
-    border-radius: 6px;
-  }
-  aside .indice a {
-    display: block;
-    margin-bottom: 10px;
-    color: #bfb05b;
-  }
-  main .contenido p {
-    margin-bottom: 20px;
-    line-height: 30px;
-    color: #525151;    
-    margin-left: 20%;
-  }
-  .links {
-    max-width: 1000px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .tablaimg {
-    border: 3px solid rgb(75, 145, 57);
-    border-radius: 2px;
-    padding: 0;
-    width: 50%;
-    display: block;
-    align-items: center;
-    margin-left: 20%;
-    margin-right: 350px;
-    height: 350px;
-    border-spacing: 0;
-    text-align: center;
-  }
+}
+tr{
+  border-collapse: collapse;
+  padding: 0;
+  border-spacing: 0;
+}
+.habilidades{
+  border: 2px #dddf43;
+}
+.main-nav{
+  margin-top:10px;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(57, 120, 82);
+  padding-left: 60px;
+  list-style-type: style none;
+  width: 100%;
+}
+.main-nav_item{
+  display: inline;
+}
+.main-nav_item a{
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  color: rgb(245, 241, 241);
+}
+
+.main-nav_item a:hover{
+  background: #479368;
+  color: #fff;
+  text-decoration: none;
+}
+.main-nav_item a:active{
+  color: brown;
+}
+.main-nav_item a::after{
+  content: "  ";
+}
+.main-nav_item a #contact::after{
+  content: "";
+}
+
+aside {
+  min-width: 20%;
+  margin: 40px 20px 20px 0;
+  height: 100%;
+  background: #bfb05b;
+  padding: 30px;
+  border-radius: 6px;
+}
+aside .indice a {
+  display: block;
+  margin-bottom: 10px;
+  color: #bfb05b;
+}
+.encabezado{
+  margin-left: 20%;
+}
+main .contenido p {
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #525151;    
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.links {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.faq{
+  width: 85%;
+  height: 400px;
+}
+ul{
+  margin-left: 22%;
+  font:'Arial', sans-serif;    
+  color: #525151;    
+}
+.cv{
+  width: 13%;
+  height: 100%;
+  margin-left: 20%;
+  min-width: 20%;
+  background: #bfb05b;
+  padding: 0;
+  border-radius: 3px;
+}
+.tablaimg {
+  border: 3px solid rgb(75, 145, 57);
+  border-radius: 2px;
+  padding: 0;
+  width: 50%;
+  display: block;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 350px;
+  height: 350px;
+  border-spacing: 0;
+  text-align: center;
+}
 img {
-    padding: 0;
-    width: 80%;
-    display: block;
-    align-items: center;
-    margin-left:0px;
-    margin-right: 350px;
-    height: 500px;
-    border-spacing: 0;
-    text-align: center;
+  border: 7px solid orange;
+  border-radius: 4px;
+  padding: 5px;
+  width: 78%;
+  display: block;
+  margin-left: 10em;
+  margin-right: 10em;
+  height: 600px;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background: #bfb05b;
+}
+
+.navbar a {
+  color: #fff;
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  color: rgb(245, 241, 241);
+  transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+  background: #1D2F3D;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+main {
+  min-height: 100vh;
+}
+
+main .contenido p {
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #525151;
+}
+
+main .contenido .titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  padding-top: 40px;
+  margin-left: 20%;
+  color: orangered;
+}
+h3{
+  margin-left: 20%;
+  color: #525151
+}
+
+aside {
+  min-width: 20%;
+  margin: 40px 20px 20px 0;
+  height: 100%;
+  background: #bfb05b;
+  padding: 30px;
+  border-radius: 6px;
+}
+  
+aside .titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+}
+
+aside .indice a {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+aside .indice p {
+  display: block;
+  margin-bottom: 10px;
+  color: #f0e80c;
+}
+
+aside .indice li {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+@media screen and (max-width: 900px){
+  .navbar .links {
+      flex-wrap: wrap;
+      margin: 0;
+      width: 100%;
   }
-  
-  a {
-    text-decoration: none;
-    outline: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  /* * ============================== */
-  /* * ============ HEADER ========== */
-  /* * ============================== */
-  
-  .navbar {
-    background: #bfb05b;
-  }
-  
+
   .navbar a {
-    color: #fff;
-    display: inline-block;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    color: rgb(245, 241, 241);
-    transition: .3s ease-out all;
+      width: auto;
+      flex: 1;
   }
-  
-  .navbar a:hover {
-    background: #1D2F3D;
-    color: #fff;
-    text-decoration: none;
+
+
+  main .links {
+      flex-direction: column;
   }
-  
-  .contenedor {
-    max-width: 1000px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  /* * ============================== */
-  /* * ============ MAIN ============ */
-  /* * ============================== */
-  
-  main {
-    min-height: 100vh;
-  }
-  
-  main .contenido p {
-    margin-bottom: 20px;
-    line-height: 30px;
-    color: #525151;
-  }
-  
-  main .contenido .titulo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    padding-top: 40px;
-    margin-left: 20%;
-    color: orangered;
-  }
-  h3{
-    margin-left: 20%;
-    color: #525151
-  }  
-  /* * ============================== */
-  /* * ============ ASIDE =========== */
-  /* * ============================== */
-  
-  aside {
-    min-width: 20%;
-    margin: 40px 20px 20px 0;
-    height: 100%;
-    background: #479368;
-    padding: 30px;
-    border-radius: 6px;
-  }
-  
-  aside .titulo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #f2f2f2;
-  }
-  
-  aside .indice a {
-    display: block;
-    margin-bottom: 10px;
-    color: white;
-  }
-  
-  aside .indice p {
-    display: block;
-    margin-bottom: 10px;
-    color: #f0e80c;
-  }
-  
-  aside .indice li {
-    display: block;
-    margin-bottom: 10px;
-    color: white;
-  }
-  /* * ============================== */
-  /* * ========== FOOTER ============ */
-  /* * ============================== */
-  
-  
-  
-  /* * ============================== */
-  /* * ====== MEDIA QUERIES ========= */
-  /* * ============================== */
-  @media screen and (max-width: 900px){
-    .navbar .links {
-        flex-wrap: wrap;
-        margin: 0;
-        width: 100%;
-    }
-  
-    .navbar a {
-        width: auto;
-        flex: 1;
-    }
-  
-  
-    main .links {
-        flex-direction: column;
-    }
-  }
+}
